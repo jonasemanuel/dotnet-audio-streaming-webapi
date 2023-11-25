@@ -1,3 +1,3 @@
 # Audio Streaming - Web API
 
-![Diagrama sem nome drawio (1)](https://github.com/jonasemanuel/dotnet-audio-streaming-webapi/assets/12071185/2132c501-02bc-4d31-a89e-224a966013d2)
+![Diagrama sem nome drawio (2)](https://github.com/jonasemanuel/dotnet-audio-streaming-webapi/assets/12071185/bcc1167d-1373-4af7-936c-fbaf086959dc)
