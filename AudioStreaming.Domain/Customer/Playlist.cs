@@ -9,22 +9,15 @@ public class Playlist
   public  List<Music> Musics { get; private set; } = new List<Music>();
   public  DateTime CreatedAt { get; private set; }
 
-  public static Playlist Create(string name, string description, List<Music> musics, Customer owner)
+  public Playlist(string name, string description, Customer owner)
   {
-    Playlist playlist = new Playlist
-    {
-      Id = new Guid(),
-      Name = name,
-      Description = description,
-      Owner = owner,
-      CreatedAt = DateTime.Now
-    };
-
-    playlist.AddMusics(musics);
-
-    return playlist;
+    Id = new Guid();
+    Name = name;
+    Description = description;
+    Owner = owner;
+    CreatedAt = DateTime.Now;
   }
-
+  
   public void ChangeName(string name)
   {
     Name = name;

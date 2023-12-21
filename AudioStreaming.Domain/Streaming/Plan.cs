@@ -7,6 +7,7 @@ public class Plan
   public decimal Price { get; set; }
 
   public Plan(string name, decimal price) {
+    Id = new Guid();
     Name = name;
     Price = price;
   }

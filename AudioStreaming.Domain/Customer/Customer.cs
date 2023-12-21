@@ -10,9 +10,10 @@ public class Customer
   public DateOnly BornDate { get; private set; }
   public bool IsActive { get; private set; }
   public List<Playlist> Playlists { get; private set; } = new List<Playlist>();
-  public Subscription Subscription { get; private set; } = new Subscription(null);
+  public Subscription Subscription { get; private set; }
+  public List<CreditCard> CreditCards { get; private set; } = new List<CreditCard>();
 
-  public static Customer Create(string name, string email, string password, Gender gender, Plan? plan) {
+  public static Customer Create(string name, string email, string password, Gender gender, Plan plan) {
     Customer customer = new Customer
     {
         Id = new Guid(),
@@ -20,15 +21,13 @@ public class Customer
         Gender = gender
     };
 
-    Playlist favoritesMusicsPlaylist = Playlist.Create("Músicas Favoritas", new List<Music>(), customer);
+    Playlist favoritesMusicsPlaylist = new Playlist("Músicas Favoritas", "Minhas músicas favoritas", customer);
     
     customer.ChangeEmail(email);
     customer.ChangePassword(password);
-
-    customer.CreatePlaylist(new Playlist());
     customer.CreatePlaylist(favoritesMusicsPlaylist);
-    
     customer.SubscribePlan(plan);
+    customer.Activate();
 
     return customer;
   }
@@ -58,7 +57,7 @@ public class Customer
     Playlists.Add(playlist);
   }
 
-  public void SubscribePlan(Plan? plan) {
+  public void SubscribePlan(Plan plan) {
     Subscription = new Subscription(plan);
   } 
 
@@ -75,5 +74,10 @@ public class Customer
   public void ChangeBornDate(DateOnly date)
   {
     BornDate = date;
+  }
+
+  public void AddCreditCard(CreditCard creditCard)
+  {
+    CreditCards.Add(creditCard);
   }
 }

@@ -11,7 +11,7 @@ public class Transaction
 
   public Transaction(string details, Merchant merchant, decimal value)
   {
-    if(value > 0)
+    if(value <= 0)
     {
       throw new Exception("Transaction value should be greater than 0");
     }

@@ -6,7 +6,15 @@ public class CreditCard
   public int Number { get; private set; }
   public bool IsActive { get; private set; }
   public decimal Limit { get; private set; }
-  public List<Transaction> Transactions { get; set; } = new List<Transaction>();
+  public List<Transaction> Transactions { get; private set; } = new List<Transaction>();
+
+  public CreditCard(int number, decimal limit)
+  {
+    Id = new Guid();
+    Number = number;
+    IsActive = true;
+    Limit = limit;
+  }
 
   public void NewTransaction(Merchant merchant, decimal value, string details)
   {
@@ -21,20 +29,23 @@ public class CreditCard
     }
 
     Transaction transaction = new Transaction(details, merchant, value);
+    Transactions.Add(transaction);
 
     ValidateTransaction(transaction);
+
+    Limit = Limit - transaction.Value;
   }
 
   private bool IsAvailableLimit(decimal transactionValue)
   {
-    return this.Limit < transactionValue;
+    return Limit >= transactionValue;
   }
 
   private void ValidateTransaction(Transaction transaction)
   {
     IEnumerable<Transaction> lastTransactions = Transactions.Where(t =>
     {
-      return t.CreatedAt >= DateTime.Now.AddMinutes(2);
+      return t.CreatedAt <= DateTime.Now.AddMinutes(2);
     });
 
     if(lastTransactions.Count() >= 3)
@@ -51,5 +62,20 @@ public class CreditCard
     {
       throw new Exception("Duplicate transaction to same merchant detected.");
     }
+
+    if(IsActive == false)
+    {
+      throw new Exception("Credit card is inactive.");
+    }
+  }
+
+  public void Active()
+  {
+    IsActive = true;
+  }
+
+  public void DeActivate()
+  {
+    IsActive = false;
   }
 }

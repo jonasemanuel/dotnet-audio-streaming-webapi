@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioStreaming.Domain", "Au
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioStreaming.Infrastructure", "AudioStreaming.Infrastructure\AudioStreaming.Infrastructure.csproj", "{94C56B65-5206-4D76-B91A-3A7FE508B354}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioStreaming.Test", "AudioStreaming.Test\AudioStreaming.Test.csproj", "{4C36138A-42F1-4BE5-AF74-322FF9B95FA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{94C56B65-5206-4D76-B91A-3A7FE508B354}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94C56B65-5206-4D76-B91A-3A7FE508B354}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94C56B65-5206-4D76-B91A-3A7FE508B354}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C36138A-42F1-4BE5-AF74-322FF9B95FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C36138A-42F1-4BE5-AF74-322FF9B95FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C36138A-42F1-4BE5-AF74-322FF9B95FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C36138A-42F1-4BE5-AF74-322FF9B95FA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
