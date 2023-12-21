@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioStreaming.Domain", "AudioStreaming.Domain\AudioStreaming.Domain.csproj", "{75D5B6F2-13C3-420B-9881-D74F5CB6FC62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioStreaming.Infrastructure", "AudioStreaming.Infrastructure\AudioStreaming.Infrastructure.csproj", "{94C56B65-5206-4D76-B91A-3A7FE508B354}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75D5B6F2-13C3-420B-9881-D74F5CB6FC62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75D5B6F2-13C3-420B-9881-D74F5CB6FC62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75D5B6F2-13C3-420B-9881-D74F5CB6FC62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75D5B6F2-13C3-420B-9881-D74F5CB6FC62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94C56B65-5206-4D76-B91A-3A7FE508B354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94C56B65-5206-4D76-B91A-3A7FE508B354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94C56B65-5206-4D76-B91A-3A7FE508B354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94C56B65-5206-4D76-B91A-3A7FE508B354}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,75 @@
+@startuml
+
+class Customer {
+  String name
+  String email
+  String password
+  String gender
+  Date bornDate
+  Bool isActive 
+}
+
+class Subscription {
+  Bool isActive
+  Date createdAt
+}
+
+class CreditCard {
+  Int number
+  Bool isActive
+  Decimal limit
+}
+
+class Playlist { 
+  String name
+  String description
+  Date createdAt
+}
+
+class Music {
+  String name
+  Int duration 
+}
+
+class Plan {
+  String name
+  String description
+  Decimal price
+}
+
+class Album {
+  String name
+  String imageUrl
+}
+
+class Artist {
+ String name
+ String description
+ String imageUrl
+}
+
+class Notification {
+  Date date
+  String title
+  String message
+  String type
+}
+
+class Transaction {
+  String details
+  Date createdAt
+  String status
+  Decimal value
+  String merchantName
+}
+
+Playlist "1" *-- "N" Music
+Album "1" *-- "N" Music
+Artist "1" *-- "N" Music
+Customer "1" *-- "N" Playlist
+Customer "1" *-- "N" CreditCard
+Customer "1" *-- "1" Subscription
+Subscription "1" *-- "1" Plan
+CreditCard "1" *-- "N" Transaction
+
+@enduml

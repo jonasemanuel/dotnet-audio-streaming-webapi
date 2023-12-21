@@ -1,0 +1,11 @@
+/Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Domain/bin/Debug/net7.0/AudioStreaming.Domain.deps.json
+/Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Domain/bin/Debug/net7.0/AudioStreaming.Domain.dll
+/Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Domain/bin/Debug/net7.0/AudioStreaming.Domain.pdb
+/Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Domain/obj/Debug/net7.0/AudioStreaming.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Domain/obj/Debug/net7.0/AudioStreaming.Domain.AssemblyInfoInputs.cache
+/Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Domain/obj/Debug/net7.0/AudioStreaming.Domain.AssemblyInfo.cs
+/Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Domain/obj/Debug/net7.0/AudioStreaming.Domain.csproj.CoreCompileInputs.cache
+/Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Domain/obj/Debug/net7.0/AudioStreaming.Domain.dll
+/Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Domain/obj/Debug/net7.0/refint/AudioStreaming.Domain.dll
+/Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Domain/obj/Debug/net7.0/AudioStreaming.Domain.pdb
+/Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Domain/obj/Debug/net7.0/ref/AudioStreaming.Domain.dll
