@@ -9,3 +9,7 @@
 /Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Infrastructure/obj/Debug/net7.0/refint/AudioStreaming.Infrastructure.dll
 /Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Infrastructure/obj/Debug/net7.0/AudioStreaming.Infrastructure.pdb
 /Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Infrastructure/obj/Debug/net7.0/ref/AudioStreaming.Infrastructure.dll
+/Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Infrastructure/bin/Debug/net7.0/AudioStreaming.Domain.dll
+/Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Infrastructure/bin/Debug/net7.0/AudioStreaming.Domain.pdb
+/Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Infrastructure/obj/Debug/net7.0/AudioStreaming.Infrastructure.csproj.AssemblyReference.cache
+/Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Infrastructure/obj/Debug/net7.0/AudioStreaming.Infrastructure.csproj.CopyComplete
