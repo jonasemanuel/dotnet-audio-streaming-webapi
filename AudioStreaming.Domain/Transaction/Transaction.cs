@@ -2,7 +2,7 @@
 
 public class Transaction
 {
-  public Guid Id { get; set; }
+  public Guid Id { get; private set; }
   public string Details { get; private set; }
   public DateTime CreatedAt { get; private set; }
   public TransactionStatus Status { get; set; } = TransactionStatus.OK;

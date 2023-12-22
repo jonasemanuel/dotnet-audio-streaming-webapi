@@ -10,7 +10,7 @@ public class ArtistTests
     Artist artist = new Artist("Michael Jackson", "profile.png");
     List<Music> musicsToAdd = new List<Music>
     {
-        new Music("Black or White")
+        new Music("Black or White", 2000)
     };
 
     artist.CreateAlbum("Thriller", "album.png");
