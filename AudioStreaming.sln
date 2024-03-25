@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioStreaming.Infrastructu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioStreaming.Test", "AudioStreaming.Test\AudioStreaming.Test.csproj", "{4C36138A-42F1-4BE5-AF74-322FF9B95FA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioStreaming.Http", "AudioStreaming.Http\AudioStreaming.Http.csproj", "{EADBD166-850F-49FE-8270-387B8D04A833}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioStreaming.Application", "AudioStreaming.Application\AudioStreaming.Application.csproj", "{6185B3ED-BF1A-46A4-A0BD-5832F66E2826}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{4C36138A-42F1-4BE5-AF74-322FF9B95FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C36138A-42F1-4BE5-AF74-322FF9B95FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C36138A-42F1-4BE5-AF74-322FF9B95FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EADBD166-850F-49FE-8270-387B8D04A833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EADBD166-850F-49FE-8270-387B8D04A833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EADBD166-850F-49FE-8270-387B8D04A833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EADBD166-850F-49FE-8270-387B8D04A833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6185B3ED-BF1A-46A4-A0BD-5832F66E2826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6185B3ED-BF1A-46A4-A0BD-5832F66E2826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6185B3ED-BF1A-46A4-A0BD-5832F66E2826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6185B3ED-BF1A-46A4-A0BD-5832F66E2826}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

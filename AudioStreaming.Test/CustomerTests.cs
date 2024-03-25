@@ -13,13 +13,7 @@ public class CustomerTests
 
         Plan newPlan = new Plan("Plano Grátis", 0m);
         CreditCard creditCard = new CreditCard(number: 43211234, limit: 1000M);
-        Customer customer = Customer.Create(
-            name: userName, 
-            email: userEmail, 
-            password: userPassword, 
-            gender: Gender.MALE, 
-            plan: newPlan
-        );
+        Customer customer = new Customer(userName, userEmail, userPassword, Gender.MALE, newPlan);
         customer.AddCreditCard(creditCard);
 
         Assert.True(customer.Name == userName);
@@ -43,7 +37,7 @@ public class CustomerTests
 
         Assert.Throws<Exception>(() => 
         {
-            Customer customer = Customer.Create(
+            Customer customer = new Customer(
                 name: userName, 
                 email: userEmail, 
                 password: userPassword, 

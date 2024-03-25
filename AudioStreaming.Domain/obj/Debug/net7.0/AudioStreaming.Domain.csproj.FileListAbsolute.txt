@@ -9,3 +9,4 @@
 /Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Domain/obj/Debug/net7.0/refint/AudioStreaming.Domain.dll
 /Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Domain/obj/Debug/net7.0/AudioStreaming.Domain.pdb
 /Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Domain/obj/Debug/net7.0/ref/AudioStreaming.Domain.dll
+/Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Domain/obj/Debug/net7.0/AudioStreaming.Domain.sourcelink.json

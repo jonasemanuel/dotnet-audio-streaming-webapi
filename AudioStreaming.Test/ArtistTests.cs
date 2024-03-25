@@ -8,12 +8,13 @@ public class ArtistTests
   public void ShouldAddMusicCorrectly()
   {
     Artist artist = new Artist("Michael Jackson", "profile.png");
+    artist.CreateAlbum("Thriller", "album.png");
+
     List<Music> musicsToAdd = new List<Music>
     {
-        new Music("Black or White", 2000)
+        new Music("Black or White", 2000, artist.Albums.First())
     };
 
-    artist.CreateAlbum("Thriller", "album.png");
     artist.AddMusics("Thriller", musicsToAdd);
 
     Assert.True(artist.Albums.Count() == 1);

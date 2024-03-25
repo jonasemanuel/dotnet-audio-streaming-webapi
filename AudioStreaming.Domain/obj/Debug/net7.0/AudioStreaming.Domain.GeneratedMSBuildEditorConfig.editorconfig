@@ -9,3 +9,5 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AudioStreaming.Domain
 build_property.ProjectDir = /Users/jonasemanuel/Projects/infnet/dotnet-audio-streaming-webapi/AudioStreaming.Domain/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
