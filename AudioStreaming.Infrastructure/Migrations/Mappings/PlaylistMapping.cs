@@ -15,6 +15,7 @@ public class PlaylistMapping : IEntityTypeConfiguration<Playlist>
         builder.Property(x => x.Name).IsRequired();
         builder.Property(x => x.Description).IsRequired();
         builder.Property(x => x.CreatedAt).IsRequired();
+        builder.Property(x => x.IsPublic).IsRequired();
 
         builder.HasOne(x => x.Owner).WithMany();
         builder.HasMany(x => x.Musics).WithOne();

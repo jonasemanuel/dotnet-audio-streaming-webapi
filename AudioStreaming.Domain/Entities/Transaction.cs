@@ -20,7 +20,7 @@ public class Transaction : IEntity
 
     Id = new Guid();
     Details = details;
-    CreatedAt = DateTime.Now;
+    CreatedAt = DateTime.UtcNow;
     Merchant = merchant;
     Value = value;
   }

@@ -15,7 +15,7 @@ public class Music : IEntity
     Id = new Guid();
     Name = name;
     Duration = duration;
-    CreatedAt = DateTime.Now;
+    CreatedAt = DateTime.UtcNow;
     Album = album;
   }
 }

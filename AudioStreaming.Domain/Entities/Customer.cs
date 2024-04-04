@@ -16,19 +16,11 @@ public class Customer : IEntity
   public Customer() {}
 
   public Customer (string name, string email, string password, Gender gender, Plan plan) {
-    Customer customer = new Customer
-    {
-        Id = new Guid(),
-        Name = name,
-        Gender = gender
-    };
-
-    Playlist favoritesMusicsPlaylist = new Playlist("Músicas Favoritas", "Minhas músicas favoritas", customer);
-    Email = new Email(email);
-    Password = new Password(password);
-    this.Playlists.Add(favoritesMusicsPlaylist);
-    this.SubscribePlan(plan);
-    this.Activate();
+    this.Id = new Guid();
+    this.Name = name;
+    this.Email = new Email(email);
+    this.Password = new Password(password);
+    this.Gender = gender;
   }
 
   public void ChangeEmail(string email)

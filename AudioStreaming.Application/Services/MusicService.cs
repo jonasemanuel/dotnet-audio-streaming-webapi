@@ -49,4 +49,18 @@ public class MusicService
         Music music = new Music(request.Name, request.Duration, selectedAlbum);
         _musicRepository.Add(music);
     }
+
+    public List<ResponseMusicDTO> Search(string query)
+    {
+        return _musicRepository.GetAll().Where(music => music.Name.Contains(query)).Select(music => new ResponseMusicDTO{
+            Id = music.Id.ToString(),
+            Name = music.Name,
+            Duration = music.Duration,
+            Album = new ResponseAlbumDTO{
+                Id = music.Album.Id.ToString(),
+                Name = music.Album.Name,
+                ImageUrl = music.Album.ImageUrl
+            }
+        }).ToList();
+    }
 }

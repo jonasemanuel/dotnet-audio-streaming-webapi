@@ -14,6 +14,11 @@ public class MusicRepository : RepositoryDefault<Music>
 
   public Music GetById(string id)
   {
-    return _context.Musics.Include(music => music.Album).FirstOrDefault(music => music.Id.ToString() == id);
+    return _context.Musics.Include(music => music.Album).Include(music => music.Album.Owner).FirstOrDefault(music => music.Id.ToString() == id);
   }
+
+    public IList<Music> GetAll()
+    {
+        return _context.Set<Music>().Include(music => music.Album).ToList();
+    }
 }

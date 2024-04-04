@@ -1,4 +1,4 @@
-﻿namespace AudioStreaming.Http;
+﻿namespace AudioStreaming.Application;
 
 public class CadasterUserDTO
 {

@@ -1,6 +1,9 @@
-﻿using AudioStreaming.Domain;
-using AudioStreaming.Http;
+﻿using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using AudioStreaming.Domain;
 using AudioStreaming.Infrastructure;
+using Microsoft.IdentityModel.Tokens;
 
 namespace AudioStreaming.Application;
 
@@ -18,13 +21,18 @@ public class AuthService
     public bool Authenticate(string email, string password)
     {
         Customer customer = _customerRepository.GetByEmail(email);
-        return customer.Password.Value == password;
+        if(customer == null) return false;
+        if(customer.Password.Value != password) return false;
+        return true;
     }
 
     public void Create(CadasterUserDTO cadasterUserDTO)
     {
         Plan selectedPlan = _planRepository.GetById(cadasterUserDTO.PlanId);
         Customer customer = new Customer(cadasterUserDTO.Name, cadasterUserDTO.Email, cadasterUserDTO.Password, ParseEnum.Parse<Gender>(cadasterUserDTO.Gender), selectedPlan);
+        customer.CreatePlaylist(new Playlist("Músicas Favoritas", "Minhas músicas favoritas", customer, false));
+        customer.SubscribePlan(selectedPlan);
+        customer.Activate();
         _customerRepository.Add(customer);
     }
 }

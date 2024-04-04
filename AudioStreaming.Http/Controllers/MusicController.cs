@@ -34,4 +34,11 @@ public class MusicController : ControllerBase
         _musicService.Create(request);
         return Ok();
     }
+
+    [HttpGet]
+    [Route("search")]
+    public IActionResult Search([FromQuery] string q)
+    {
+        return Ok(_musicService.Search(q));
+    }
 }
