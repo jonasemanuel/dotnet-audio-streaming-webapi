@@ -13,12 +13,6 @@ public record class Password
       throw new Exception("Password must be at least 8 characters");
     }
 
-    SHA256 criptoProvider = SHA256.Create();
-
-    byte[] btexto = Encoding.UTF8.GetBytes(password);
-
-    var criptoResult = criptoProvider.ComputeHash(btexto);
-
-    Value = Convert.ToHexString(criptoResult);
+    Value = password;
   }
 }

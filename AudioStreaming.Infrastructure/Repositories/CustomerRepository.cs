@@ -1,4 +1,5 @@
 ﻿using AudioStreaming.Domain;
+using Microsoft.EntityFrameworkCore;
 
 namespace AudioStreaming.Infrastructure;
 
@@ -13,6 +14,6 @@ public class CustomerRepository : RepositoryDefault<Customer>
 
   public Customer GetByEmail(string email)
   {
-    return _context.Customers.FirstOrDefault(c => c.Email.Value == email);
+    return _context.Customers.Include(c => c.Subscription.Plan).ToList().FirstOrDefault(c => c.Email.Value == email);
   }
 }

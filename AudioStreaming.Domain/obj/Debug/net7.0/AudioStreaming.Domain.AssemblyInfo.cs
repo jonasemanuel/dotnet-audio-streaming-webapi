@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AudioStreaming.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1725fa929ac34ee3e8501be85bffbf060e961644")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a6ab27101708e675f91a921f331b5e2f7cf1626")]
 [assembly: System.Reflection.AssemblyProductAttribute("AudioStreaming.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AudioStreaming.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

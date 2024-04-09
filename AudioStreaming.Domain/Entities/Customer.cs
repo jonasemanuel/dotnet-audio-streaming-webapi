@@ -19,7 +19,7 @@ public class Customer : IEntity
     this.Id = new Guid();
     this.Name = name;
     this.Email = new Email(email);
-    this.Password = new Password(password);
+    this.Password = new Password(password.HashSHA256());
     this.Gender = gender;
   }
 

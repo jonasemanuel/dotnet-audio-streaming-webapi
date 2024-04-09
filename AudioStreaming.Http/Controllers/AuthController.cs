@@ -14,7 +14,8 @@ public class AuthController : ControllerBase
         _userService = userService;
     }
 
-    [HttpPost("cadaster")]
+    [HttpPost]
+    [Route("cadaster")]
     public IActionResult Cadaster([FromBody] CadasterUserDTO request)
     {
         if(ModelState.IsValid == false) return BadRequest(ModelState);
@@ -23,9 +24,12 @@ public class AuthController : ControllerBase
         return Ok();
     }
 
-    [HttpGet("login")]
+    [HttpPost]
+    [Route("login")]
     public IActionResult Login([FromBody] LoginUserDTO request)
     {
-        return Ok(_userService.Authenticate(email: request.Email, password: request.Password));
+        var user = _userService.Authenticate(email: request.Email, password: request.Password);
+        if(user == null) return Unauthorized();
+        return Ok(user);
     }
 }
