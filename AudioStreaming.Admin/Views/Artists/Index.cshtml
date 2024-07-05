@@ -1,0 +1,66 @@
+﻿@model IEnumerable<AudioStreaming.Application.ResponseArtistDTO>
+
+<div class="w-full h-screen">
+  <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+    <div class="flex flex-col">
+      <div class="-mb-2 py-4 flex flex-wrap flex-grow justify-between">
+        <div class="flex items-center py-2">
+          <a asp-controller="Artists" asp-action="Create"
+             class="inline-block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline">
+            Nova Banda
+          </a>
+        </div>
+      </div>
+      <div class="-my-2 py-2 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+        <div class="align-middle inline-block w-full shadow overflow-x-auto sm:rounded-lg border-b border-gray-200">
+          <table class="min-w-full">
+            <thead>
+              <tr class="bg-gray-50 border-b border-gray-200 text-xs leading-4 text-gray-500 uppercase tracking-wider">
+                <th class="px-6 py-3 text-left font-medium">
+                  Nome
+                </th>
+                <th class="px-6 py-3 text-left font-medium">
+                  Url da Imagem
+                </th>
+                <th class="px-6 py-3 text-left font-medium">
+                    Ações
+                </th>
+              </tr>
+            </thead>
+            <tbody class="bg-white">
+            @if (Model.Count() == 0) {
+              <tr>
+                  <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                      <div class="text-sm leading-5 text-gray-900">
+                          Nenhuma banda cadastrada
+                      </div>
+                  </td>
+              </tr>
+            }
+            @foreach(var artist in Model) {
+                <tr>
+                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                        <div class="text-sm leading-5 text-gray-900">
+                            @artist.Name
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                        <div class="text-sm leading-5 text-gray-900">
+                            @artist.ImageUrl
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                        <div class="text-sm leading-5 text-gray-900">
+                            <a href="" class="text-indigo-600 hover:text-indigo-900">Editar</a>
+                            <a href="" class="text-red-600 hover:text-red-900">Excluir</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,5 @@
-﻿using AudioStreaming.Domain;
-using AudioStreaming.Infrastructure;
+﻿using AudioStreaming.Admin.Infrastructure;
+using AudioStreaming.Domain;
 
 namespace AudioStreaming.Application;
 
@@ -18,6 +18,15 @@ public class ArtistService
     {
         Artist artist = new Artist(request.Name, request.ImageUrl);
         _artistRepository.Add(artist);
+    }
+
+    public IEnumerable<ResponseArtistDTO> GetAll()
+    {
+        return _artistRepository.GetAll().Select(artist => new ResponseArtistDTO{
+            Id = artist.Id.ToString(),
+            Name = artist.Name,
+            ImageUrl = artist.ImageUrl
+        }).ToList();
     }
 
     public void AddAlbum(Guid artistId, RequestAlbumDTO album)

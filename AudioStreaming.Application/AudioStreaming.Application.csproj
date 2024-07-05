@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AudioStreaming.Infrastructure\AudioStreaming.Infrastructure.csproj" />
+    <ProjectReference Include="..\AudioStreaming.Admin.Infrastructure\AudioStreaming.Admin.Infrastructure.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

@@ -1,5 +1,5 @@
-﻿using AudioStreaming.Domain;
-using AudioStreaming.Infrastructure;
+﻿using AudioStreaming.Admin.Infrastructure;
+using AudioStreaming.Domain;
 
 namespace AudioStreaming.Application;
 
@@ -45,8 +45,7 @@ public class MusicService
 
     public void Create(RequestMusicDTO request)
     {
-        Album selectedAlbum = _albumRepository.GetById(request.AlbumId);
-        Music music = new Music(request.Name, request.Duration, selectedAlbum);
+        Music music = new Music(request.Name, request.Duration, new Album("Album", new Artist("Artist", "url.png"), "ImageUrl"));
         _musicRepository.Add(music);
     }
 

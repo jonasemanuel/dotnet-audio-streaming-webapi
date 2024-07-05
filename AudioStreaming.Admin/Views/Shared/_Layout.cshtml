@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AudioStreaming.Admin</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/AudioStreaming.Admin.styles.css" asp-append-version="true" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <header>
+            <nav class="bg-white shadow-md">
+                <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+                    <div class="text-2xl font-bold text-gray-800">Audio Streaming Admin</div>
+                    <div class="flex space-x-4">
+                        <a asp-controller="Users" class="text-gray-700 hover:text-blue-500 font-medium">Usuários</a>
+                        <a asp-controller="Home" class="text-gray-700 hover:text-blue-500 font-medium">Músicas</a>
+                        <a asp-controller="Artists" class="text-gray-700 hover:text-blue-500 font-medium">Bandas</a>
+                    </div>
+                    <div class="text-gray-700 font-medium">
+                        Olá, @User.Identity.Name
+                        <a href="/Account/Logout">Sair</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    }
+    <div class="container">
+        <main role="main" class="pb-3 flex items-center justify-center">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - Painel de Administração - AudioStreaming
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

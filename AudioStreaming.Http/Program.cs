@@ -31,16 +31,11 @@ builder.Services.AddControllers();
 
 builder.Services.AddScoped<PlanRepository>();
 builder.Services.AddScoped<CustomerRepository>();
-builder.Services.AddScoped<ArtistRepository>();
-builder.Services.AddScoped<AlbumRepository>();
-builder.Services.AddScoped<MusicRepository>();
 builder.Services.AddScoped<PlaylistRepository>();
 
 builder.Services.AddScoped<PlanService>();
 builder.Services.AddScoped<CustomerService>();
 builder.Services.AddScoped<AuthService>();
-builder.Services.AddScoped<ArtistService>();
-builder.Services.AddScoped<MusicService>();
 builder.Services.AddScoped<PlaylistService>();
 
 builder.Services.AddDbContext<ApplicationContext>(context => {

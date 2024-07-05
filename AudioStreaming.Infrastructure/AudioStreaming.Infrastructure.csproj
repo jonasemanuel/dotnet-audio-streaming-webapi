@@ -18,4 +18,10 @@
     <ProjectReference Include="..\AudioStreaming.Domain\AudioStreaming.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations/Admin/" />
+    <Folder Include="Repositories/Contexts/" />
+    <Folder Include="Repositories/StreamingApi/" />
+  </ItemGroup>
+
 </Project>

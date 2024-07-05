@@ -1,0 +1,21 @@
+﻿@model AudioStreaming.Admin.MusicRequest;
+
+<div class="flex items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
+        <h2 class="text-2xl font-bold mb-6">Cadastro de Música</h2>
+        <form method="post" asp-controller="Home" asp-action="Save">
+            <div class="mb-4">
+                <label for="nome" class="block text-gray-700 font-medium mb-2">Nome</label>
+                @Html.TextBoxFor(x => x.Name, new { @class = "w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"})
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+            <div class="mb-4">
+                <label for="duracao" class="block text-gray-700 font-medium mb-2">Duração</label>
+                @Html.TextBoxFor(x => x.Duration, new { @class = "w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500", @type = "number" })
+            </div>
+            <div class="flex justify-end">
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+</div>

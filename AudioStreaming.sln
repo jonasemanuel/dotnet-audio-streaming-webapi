@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioStreaming.Http", "Audi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioStreaming.Application", "AudioStreaming.Application\AudioStreaming.Application.csproj", "{6185B3ED-BF1A-46A4-A0BD-5832F66E2826}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioStreaming.Admin", "AudioStreaming.Admin\AudioStreaming.Admin.csproj", "{C0C14999-243D-465D-A8B3-9CC4282F2895}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioStreaming.Admin.Infrastructure", "AudioStreaming.Admin.Infrastructure\AudioStreaming.Admin.Infrastructure.csproj", "{F06F8E0D-0659-469D-B7FF-805DE271430D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +46,13 @@ Global
 		{6185B3ED-BF1A-46A4-A0BD-5832F66E2826}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6185B3ED-BF1A-46A4-A0BD-5832F66E2826}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6185B3ED-BF1A-46A4-A0BD-5832F66E2826}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0C14999-243D-465D-A8B3-9CC4282F2895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C14999-243D-465D-A8B3-9CC4282F2895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C14999-243D-465D-A8B3-9CC4282F2895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C14999-243D-465D-A8B3-9CC4282F2895}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F06F8E0D-0659-469D-B7FF-805DE271430D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F06F8E0D-0659-469D-B7FF-805DE271430D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F06F8E0D-0659-469D-B7FF-805DE271430D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F06F8E0D-0659-469D-B7FF-805DE271430D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
